@@ -1,0 +1,30 @@
+:root {
+        --color-hb-menu: #D84282;
+}
+
+#menu {
+    position: relative;
+    background-color: var(--color-hb-menu);
+    width: 150px;
+    height: 20px;
+    border-radius: 9999px;
+    margin: 50vh auto;
+}
+
+#menu::before, #menu::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--color-hb-menu);
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+}
+
+#menu::before {
+    top: -150%;
+}
+
+#menu::after {
+    top: 150%;
+}
